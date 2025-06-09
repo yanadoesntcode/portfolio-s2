@@ -7,3 +7,52 @@
   font-style: normal;
 }
 
+.glow-button {
+  --glow-color: #f5c97a; /* champagne gold */
+  --glow-spread-color: rgba(245, 201, 122, 0.5); /* soft spotlight glow */
+  --enhanced-glow-color: #ffe7ba; /* extra bright highlight */
+  --btn-color: #3f3f3f; 
+
+  border: 0.25em solid var(--glow-color);
+  padding: 1em 3em;
+  color: var(--glow-color);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  position: relative;
+  transition: all 0.3s;
+  box-shadow: 0 0 0.6em 0.1em var(--glow-color),
+    0 0 1.5em 0.4em var(--glow-spread-color),
+    inset 0 0 0.4em 0.2em var(--glow-color);
+  font-family: 'Black Mango', sans-serif;
+}
+
+.glow-button::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: 0.2;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+
+.glow-button:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em 0.25em var(--glow-color),
+    0 0 4em 2em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);
+}
+
+.glow-button:active {
+  box-shadow: 0 0 0.6em 0.25em var(--glow-color),
+    0 0 2.5em 2em var(--glow-spread-color),
+    inset 0 0 0.5em 0.25em var(--glow-color);
+}

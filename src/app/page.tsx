@@ -151,7 +151,7 @@ export default function Home() {
             variants={stagger}
           >
             {[
-              { label: 'Interactive media', href: 'LO1.html' },
+              { label: 'Interactive media', href: 'Lo1' },
               { label: 'Dev & Version Control', href: 'LO2.html' },
               { label: 'Iterative Design', href: 'LO3.html' },
               { label: 'Professional Standard', href: 'LO4.html' },

@@ -152,10 +152,10 @@ export default function Home() {
           >
             {[
               { label: 'Interactive media', href: 'Lo1' },
-              { label: 'Dev & Version Control', href: 'LO2.html' },
-              { label: 'Iterative Design', href: 'LO3.html' },
-              { label: 'Professional Standard', href: 'LO4.html' },
-              { label: 'Personal Leadership', href: 'LO5.html' },
+              { label: 'Dev & Version Control', href: 'Lo2' },
+              { label: 'Iterative Design', href: 'Lo3' },
+              { label: 'Professional Standard', href: 'Lo4' },
+              { label: 'Personal Leadership', href: 'Lo5' },
             ].map(({ label, href }, idx) => (
               <motion.button
                 key={idx}

@@ -14,15 +14,7 @@ const Page: NextPage = ({}) => {
     approach='The process was rewarding and pushed me to think beyond screen-based design. Translating a digital concept into tactile materials taught me to consider texture, fold lines, and physical readability. Collaboration with my teammate also helped us distribute the design tasks based on individual strengths, which improved both workflow and final quality.'
     takeaways='I learned how to design for print, how to integrate scannable QR links for added interactivity, and how to balance creative design with practical communication. I also gained experience in visual storytelling through sequential booklet panels and discovered the importance of creating a strong, unified visual identity across multiple touchpoints.'
     improvements='Next time, I’d test printed mockups earlier in the design phase to catch any issues with layout scaling or paper folds. I’d also experiment more with layout variations before finalizing, and perhaps gather more user feedback to refine how the information flows across pages and formats.'
-    images={[
-        '/images/interactivebelco1.png',
-        '/images/interactivebelco2.png',
-        '/images/interactivebelco3.png',
-        '/images/interactivebelco4.png',
-        '/images/interactivebelco5.png',
-        '/images/interactivebelco6.png',
-    ]}
-    href="/article1" />
+    images={["/images/interactivebelco1.png", "/images/interactivebelco2.png", "/images/interactivebelco3.png", "/images/interactivebelco4.png", "/images/interactivebelco5.png", "/images/interactivebelco6.png"]}/>
 
   </main>
 }

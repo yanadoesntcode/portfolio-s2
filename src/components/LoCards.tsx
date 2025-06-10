@@ -1,6 +1,9 @@
-import { NextPage } from 'next'
+"use client";
+import { NextPage } from 'next';
 import Image from 'next/image';
-import Link from 'next/link'
+import Link from 'next/link';
+import useEmblaCarousel from 'embla-carousel-react';
+import { useCallback, useEffect, useState } from 'react';
 
 type BlogCardsProps = {
   introduction: string;
@@ -8,35 +11,92 @@ type BlogCardsProps = {
   approach: string;
   takeaways: string;
   improvements: string;
-  image: string;
-  href: string;
-}
-export default function LoCards({ introduction, process, approach, takeaways, improvements, image, href }: BlogCardsProps) {
+  images: string[]; // Ensure this is always an array
+};
+
+export default function LoCards({ introduction, process, approach, takeaways, improvements, images }: BlogCardsProps) {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const [selectedIndex, setSelectedIndex] = useState(0); // Track active slide
+
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
+
+  // Update selected index when emblaApi changes
+  useEffect(() => {
+    if (emblaApi) {
+      console.log('Embla API initialized', images); // Debug images prop
+      const onSelect = () => setSelectedIndex(emblaApi.selectedScrollSnap());
+      emblaApi.on('select', onSelect);
+      onSelect(); // Initial call
+      return () => emblaApi.off('select', onSelect); // Cleanup
+    }
+  }, [emblaApi, images]);
+
   return (
-    <Link
-      href={href}
-      target="_blank"
-      className="rounded-[1.25rem_0rem] bg-blue w-full  sm:max-w-sm md:max-w-md lg:max-w-3xl h-auto flex flex-col overflow-hidden"
-    >
-      <Image
-        src={image}
-        alt={introduction}
-        width={388}
-        height={541}
-        className="p-4 sm:p-6 object-cover"
-      />
-      <div className="text-purple px-4 sm:px-6 pb-6">
-        <p className="text-purple font-bold text-lg sm:text-xl">Introduction - What are you looking at?</p>
-        <p className="font-normal text-sm sm:text-base mt-1">{introduction}</p>
-        <p className="text-purple font-bold text-lg sm:text-xl">What did I do? - Document the process</p>
-        <p className="font-normal text-sm sm:text-base mt-1">{process}</p>
-        <p className="text-purple font-bold text-lg sm:text-xl">How did it go? - Reflect on my approach</p>
-        <p className="font-normal text-sm sm:text-base mt-1">{approach}</p>
-        <p className="text-purple font-bold text-lg sm:text-xl">What did I learn? - Key takeaways</p>
-        <p className="font-normal text-sm sm:text-base mt-1">{takeaways}</p>
-        <p className="text-purple font-bold text-lg sm:text-xl">What would I do differently next time? - Improvements for the future</p>
-        <p className="font-normal text-sm sm:text-base mt-1">{improvements}</p>
+    <div className="rounded-[1.25rem] bg-[#adadad]  w-full sm:max-w-sm md:max-w-md lg:ml-80 lg:max-w-3xl h-auto flex flex-col overflow-hidden">
+      <div className="relative">
+        <div className="overflow-hidden" ref={emblaRef}>
+          <div className="flex">
+            {images && images.length > 0 ? (
+              images.map((image, index) => (
+                <div className="min-w-0 flex-[0_0_100%]" key={index}>
+                  <Image
+                    src={image}
+                    alt={`${introduction} - Image ${index + 1}`}
+                    width={0}
+                    height={0}
+                    layout="responsive"
+                    objectFit="cover"
+                    className="w-full h-auto"
+                  />
+                </div>
+              ))
+            ) : (
+              <div>No images available</div>
+            )}
+          </div>
+        </div>
+        <button
+          onClick={scrollPrev}
+          className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full" // Increased padding
+        >
+          &lt; {/* Left arrow */}
+        </button>
+        <button
+          onClick={scrollNext}
+          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full" // Increased padding
+        >
+          &gt; {/* Right arrow */}
+        </button>
       </div>
-    </Link>
+      <div className="flex justify-center gap-2 mt-2">
+        {images && images.length > 0 ? (
+          images.map((_, index) => (
+            <span
+              key={index}
+              className={`h-2 w-2 rounded-full ${selectedIndex === index ? 'bg-white' : 'bg-gray-500'}`} // Use state instead of emblaApi
+              onClick={() => emblaApi?.scrollTo(index)}
+            />
+          ))
+        ) : null}
+      </div>
+      <div className="text-purple px-4 sm:px-6 lg:px-9 pb-2 mt-2">
+        <p className="text-purple font-bold text-lg sm:text-xl mb-1">Introduction - What are you looking at?</p>
+        <p className="font-normal text-sm sm:text-base">{introduction}</p>
+        <p className="text-purple font-bold text-lg sm:text-xl mb-1">What did I do? - Document the process</p>
+        <p className="font-normal text-sm sm:text-base">{process}</p>
+        <p className="text-purple font-bold text-lg sm:text-xl mb-1">How did it go? - Reflect on my approach</p>
+        <p className="font-normal text-sm sm:text-base">{approach}</p>
+        <p className="text-purple font-bold text-lg sm:text-xl mb-1">What did I learn? - Key takeaways</p>
+        <p className="font-normal text-sm sm:text-base">{takeaways}</p>
+        <p className="text-purple font-bold text-lg sm:text-xl mb-1">What would I do differently next time? - Improvements for the future</p>
+        <p className="font-normal text-sm sm:text-base">{improvements}</p>
+      </div>
+    </div>
   );
 }

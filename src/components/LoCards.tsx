@@ -39,7 +39,7 @@ export default function LoCards({ title, introduction, process, approach, takeaw
   }, [emblaApi, images]);
 
   return (
-    <div className="rounded-[1.25rem] bg-[#adadad] my-[3rem]  w-full sm:max-w-sm md:max-w-md lg:ml-80 lg:max-w-4xl h-auto flex flex-col overflow-hidden">
+    <div className="rounded-[1.25rem] bg-[#adadad] my-[9rem]  w-full sm:max-w-sm md:max-w-md lg:ml-80 lg:max-w-4xl h-auto flex flex-col overflow-hidden">
       <div className="relative">
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex">

@@ -6,7 +6,8 @@ import LoCards from "@/components/LoCards"
 const Page: NextPage = ({}) => {
   return <main className='bg-[#3f3f3f]'>
     <NavBar></NavBar>
-    <h1>hello</h1>
+    <h1 className='text-6xl text-[#fdfac2] font-semibold ml-95 mt-8'>1: Interactive Media products</h1>
+    <p className="text-xl text-[#fdfac2] font-normal ml-85 mt-2 mb-10 w-220">You orient in the relevant tech, media and design landscape and create interactive media products that you have tested with users and stakeholders</p>
 
     <LoCards 
     title='Booklet'

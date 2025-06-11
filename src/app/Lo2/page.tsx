@@ -68,6 +68,16 @@ const Page: NextPage = ({}) => {
         improvements="Next time, I'll commit and push changes more regularly instead of waiting until the last minute. I'll also make sure to check on my repositories throughout the project to ensure everything is up to date. Finally, I want to continue practicing Git even outside of deadlines so that I can keep my skills fresh and avoid falling into the same confusion again."
         images={["/images/gitreadme.png", "/images/gitactivity.png", "/images/gitmembers.png"]}
     />
+    <LoCards 
+        title='Version Control w/ GitHub'
+        introduction="This entry showcases how I managed version control for my projects using GitHub. The screenshots display my repositories, commit activity, contribution timeline, and structured README files. These visuals capture my growing familiarity with GitHub as I built and updated my portfolio and collaborative work." 
+        process="I created multiple private repositories to organize and separate my key deliverables, such as my Semester 2 portfolio and the final BELCO Alliance website. I documented features clearly in each README file and regularly committed updates as I worked. As seen in the activity overview, I started slow but then began contributing more consistently once deployment and development picked up. I also ensured my portfolio README included setup instructions, feature lists, and tech stack details to prepare it for future use or sharing."
+        approach="Although I initially used GitHub passively, over time I began relying on it more actively to track progress and avoid file loss. Creating clean commit messages and maintaining a clear folder structure helped me stay organized. I also used GitHub as a live link reference for my Vercel deployments, streamlining both frontend updates and documentation."
+        takeaways="I learned how to structure GitHub repositories professionally, write clear README documentation, and manage commits with intention. I also understood the importance of syncing my local changes regularly to maintain a clean development history. Keeping my work private gave me control while still using GitHub as a professional tool."
+        improvements="Next time, I want to commit changes more frequently and with more descriptive messages. I’ll also explore branching and pull request workflows to simulate real-world collaboration. Lastly, I aim to open-source parts of my work or prepare them for public sharing by improving structure and removing sensitive information."
+        images={["/images/GitHub1.png", "/images/GitHub2.png", "/images/GitHub3.png", "/images/GitHub3-1.png"]}
+    />
+
     
     <LoCards 
         title='HTML/CSS/JS Development'

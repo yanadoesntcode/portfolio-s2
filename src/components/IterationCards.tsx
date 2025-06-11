@@ -91,13 +91,13 @@ export default function LoCards({ title, introduction, process, approach, takeaw
         <p className="text-[#3f3f3f] font-bold text-lg sm:text-xl mb-1">{title}</p>
         <p className="text-purple font-bold text-lg sm:text-xl mb-1">Introduction - What are you looking at?</p>
         <p className="font-normal text-sm sm:text-base">{introduction}</p>
-        <p className="text-purple font-bold text-lg sm:text-xl mb-1">What did I do? - Document the process</p>
+        <p className="text-purple font-bold text-lg sm:text-xl mb-1">What did I do? First Version and First Feedback</p>
         <p className="font-normal text-sm sm:text-base">{process}</p>
-        <p className="text-purple font-bold text-lg sm:text-xl mb-1">How did it go? - Reflect on my approach</p>
+        <p className="text-purple font-bold text-lg sm:text-xl mb-1">First Iteration and Feedback</p>
         <p className="font-normal text-sm sm:text-base">{approach}</p>
-        <p className="text-purple font-bold text-lg sm:text-xl mb-1">What did I learn? - Key takeaways</p>
+        <p className="text-purple font-bold text-lg sm:text-xl mb-1">Final Iteration and Validation</p>
         <p className="font-normal text-sm sm:text-base">{takeaways}</p>
-        <p className="text-purple font-bold text-lg sm:text-xl mb-1">What would I do differently next time? - Improvements for the future</p>
+        <p className="text-purple font-bold text-lg sm:text-xl mb-1">What I Learned – Summary</p>
         <p className="font-normal text-sm sm:text-base">{improvements}</p>
       </div>
     </div>

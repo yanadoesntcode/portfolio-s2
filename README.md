@@ -18,9 +18,7 @@ Welcome to my personal developer portfolio! Built using [Next.js](https://nextjs
 
 ## 📁 Project Structure
 
-```
 
-/
 ├── app/                  # App router (Next.js 14)
 │   ├── layout.tsx
 │   └── page.tsx

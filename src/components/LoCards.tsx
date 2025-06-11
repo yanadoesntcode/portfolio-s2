@@ -6,6 +6,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 import { useCallback, useEffect, useState } from 'react';
 
 type BlogCardsProps = {
+  title: string;
   introduction: string;
   process: string;
   approach: string;
@@ -14,7 +15,7 @@ type BlogCardsProps = {
   images: string[]; // Ensure this is always an array
 };
 
-export default function LoCards({ introduction, process, approach, takeaways, improvements, images }: BlogCardsProps) {
+export default function LoCards({ title, introduction, process, approach, takeaways, improvements, images }: BlogCardsProps) {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
   const [selectedIndex, setSelectedIndex] = useState(0); // Track active slide
 
@@ -38,7 +39,7 @@ export default function LoCards({ introduction, process, approach, takeaways, im
   }, [emblaApi, images]);
 
   return (
-    <div className="rounded-[1.25rem] bg-[#adadad]  w-full sm:max-w-sm md:max-w-md lg:ml-80 lg:max-w-3xl h-auto flex flex-col overflow-hidden">
+    <div className="rounded-[1.25rem] bg-[#adadad] my-[3rem]  w-full sm:max-w-sm md:max-w-md lg:ml-80 lg:max-w-4xl h-auto flex flex-col overflow-hidden">
       <div className="relative">
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex">
@@ -85,7 +86,9 @@ export default function LoCards({ introduction, process, approach, takeaways, im
           ))
         ) : null}
       </div>
-      <div className="text-purple px-4 sm:px-6 lg:px-9 pb-2 mt-2">
+      <div className="text-purple px-4 sm:px-6 lg:px-9 pb-2 mt-2 mb-6">
+
+        <p className="text-[#3f3f3f] font-bold text-lg sm:text-xl mb-1">{title}</p>
         <p className="text-purple font-bold text-lg sm:text-xl mb-1">Introduction - What are you looking at?</p>
         <p className="font-normal text-sm sm:text-base">{introduction}</p>
         <p className="text-purple font-bold text-lg sm:text-xl mb-1">What did I do? - Document the process</p>

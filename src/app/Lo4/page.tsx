@@ -36,6 +36,39 @@ const Page: NextPage = ({}) => {
         images={["/images/leadercommunication1.png", "/images/leadercommunication2.png", "/images/leadercommunication3.png", "/images/leadercommunication4.png"]}
     />
 
+    <LoCards
+        title="Trello Task Management"
+        introduction="This entry highlights my use of Trello to manage tasks during the BELCO Alliance development project. The screenshots display the development phasing plan, a written Trello usage guide I authored, and the live project board. Together, they showcase how I applied clear planning and collaborative organization in a real-world team setting."
+        process="I created and structured a Trello board with columns for 'To Do,' 'Doing,' 'Done,' and 'Not able to complete.' Each task card was tagged by week, theme (e.g., Research, Development, Testing), and project scope (BELCO Alliance vs. Education). I also included checklists, members, priorities, and deadlines. To ensure transparency, I wrote a step-by-step Trello guide for the group and connected our development phasing document to match the board’s structure."
+        approach="I focused on clarity and consistency—two values that ensured the board would be easy for all members to navigate. I also emphasized self-managed deadlines, making the workspace pressure-free yet organized. With everything visually laid out and labeled, collaboration became smoother and less dependent on constant verbal updates."
+        takeaways="I learned that solid project management doesn’t require complex tools—it just needs to be structured around clear expectations and visual organization. The Trello board helped the team prioritize better, reduce confusion, and keep track of deliverables in sync with our development phasing plan. It became a reference point we returned to daily."
+        improvements="In the future, I want to add more automation features like card reminders and status triggers. I’d also introduce a 'Feedback & Reflections' column for each sprint to document insights. Lastly, I’d encourage the entire team to take more initiative in updating their own tasks and contributing to board upkeep."
+        images={["/images/proftrelloguide.png", "/images/profscheduling.png", "/images/trelloprof.png"]}
+    />
+
+    <LoCards
+        title="Communication with Stakeholders"
+        introduction="This reflection focuses on how I handled stakeholder communication across two different group projects this semester: Create that UX and Branding. Through direct messaging and collaborative feedback, I practiced maintaining professional communication, integrating feedback, and ensuring that our clients felt involved and represented in our design process."
+        process="In Create that UX, I sent a follow-up message to our client with the Canva presentation, Figma prototype, and links to inspiration—making everything easy to review. For Branding, we maintained regular contact with our client Daniella through WhatsApp. We shared visuals, asked for feedback, and received direct input like reference sketches and preferences, which we used to guide the branding direction."
+        approach="Clear, kind, and well-organized communication helped build trust and kept both projects on track. By rephrasing feedback and staying responsive, we made our stakeholders feel heard and involved in the process."
+        takeaways="I learned that professional and empathetic communication leads to better collaboration. Asking clear questions and making clients feel part of the process improves both workflow and results."
+        improvements="Next time, I'd try to be even more proactive by asking more specific questions earlier in the process. I’d also make sure all links and materials are well-organized and easy to access from the start. Overall, I’ve become more confident in communicating directly with stakeholders, even in a professional setting."
+        images={["/images/communication1.png", "/images/communication2.png", "/images/communication3.png", "/images/communication1.png"]}
+    />
+
+    <LoCards
+        title="Presentations"
+        introduction="These are a Feedback Checkpoint and group presentations created throughout the semester at Fontys, including work for the Branding Project and the Belco Alliance website redesign. Each slide deck reflects different themes and visual directions, but they all share a common thread: I led the design, layout, and overall structure for nearly every presentation my groups delivered."
+        process="I naturally took the lead in crafting the presentations for most of our group projects. I was responsible for selecting the templates, setting the visual style, organizing the flow of content, and adding transitions or animations. I assigned roughly one slide per groupmate to fill in with content, but I took charge of making sure the whole thing felt coherent and visually polished. My tool of choice was usually Google Slides—I have experience with both Google Slides and PowerPoint, but I find PowerPoint's interface clunky and less flexible. Google Slides allowed me to work quickly with clean animations and a more intuitive workflow. However, for the Belco Alliance presentation, I used Canva for the first time. Despite its slightly messier interface, it gave me much more creative freedom with layout, motion, and visual design. I was able to bring a more expressive and experimental tone to that presentation, which aligned really well with the project."
+        approach="Taking the lead on the visual and structural side of the presentations allowed me to stay in my comfort zone and also enjoy the creative process. I genuinely like making presentations and presenting them—it's a part of group work I look forward to. Canva was a highlight; it helped me push my usual style further, especially when working on more visually layered or bold themes. One challenge, however, was that sometimes presentations didn't get much response from peers—like during our final Branding presentation, where the class didn't ask questions or give feedback beyond “it was good.” Still, our client (Dana) was very happy with what we delivered, which was rewarding."
+        takeaways="I've learned that I have a real strength—and passion—for visual storytelling through presentations. I also realized how important it is to adapt to different tools, and how trying something new (like Canva) can unlock unexpected creativity. This semester also reinforced how much I enjoy presenting and owning the structure of a group's delivery."
+        improvements="Next time, I'd like to experiment more deeply with Canva and explore features I didn't use yet. I'd also aim to collaborate more during the early stages of presentation design—perhaps involving groupmates in the visual decisions, not just assigning content. Lastly, I'd look for ways to encourage more interaction during and after presentations, especially when presenting to peers who may be hesitant to give feedback."
+        images={["/images/presentation1.png", "/images/presentation2.png", "/images/presentation3.png", "/images/presentaitioncheckpoint.png"]}
+    />
+
+
+
+
 
     <h1>...</h1>
 

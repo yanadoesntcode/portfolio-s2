@@ -29,15 +29,18 @@ export default function LoCards({ title, introduction, process, approach, takeaw
 
   // Update selected index when emblaApi changes
   useEffect(() => {
-    if (emblaApi) {
-      console.log('Embla API initialized', images); // Debug images prop
-      const onSelect = () => setSelectedIndex(emblaApi.selectedScrollSnap());
-      emblaApi.on('select', onSelect);
-      onSelect(); // Initial call
-      return () => emblaApi.off('select', onSelect); // Cleanup
-    }
+    if (!emblaApi) return;
+  
+    console.log('Embla API initialized', images);
+    const onSelect = () => setSelectedIndex(emblaApi.selectedScrollSnap());
+  
+    emblaApi.on('select', onSelect);
+    onSelect(); // Initial set
+  
+    return () => {
+      emblaApi.off('select', onSelect);
+    };
   }, [emblaApi, images]);
-
   return (
     <div className="rounded-[1.25rem] bg-[#adadad] my-[3rem]  w-full sm:max-w-sm md:max-w-md lg:ml-80 lg:max-w-4xl h-auto flex flex-col overflow-hidden">
       <div className="relative">

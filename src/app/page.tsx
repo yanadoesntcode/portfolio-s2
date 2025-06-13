@@ -41,7 +41,7 @@ export default function Home() {
         {/* Logo and name stacked vertically */}
         <div className="flex flex-col gap-2 w-fit">
           <Image src="/images/Logo.svg" alt="logo" width={45} height={60} />
-          <Image src="/images/Yana Spasova.svg" alt="name" width={120} height={40} />
+          <Image src="/images/Yana Spasova.svg" alt="name" width={120} height={40} className='ml-[-1.4rem]' />
         </div>
 
         {/* Main title with fade-up animation */}
@@ -106,17 +106,17 @@ export default function Home() {
           <motion.div className="max-w-3xl text-base sm:text-lg leading-relaxed" variants={fadeUp}>
             {activeTab === 'design_philo' && (
               <p>
-                Design allows me to give shape to ideas — to translate thoughts into visuals that are both functional and expressive...
+                Design allows me to give shape to ideas — to translate thoughts into visuals that are both functional and expressive. I’m drawn to the way design can organize complexity, tell stories without words, and create meaning through form, space, and rhythm. What excites me most is how design invites both logic and imagination — it’s a process of making decisions with purpose, while still leaving room for exploration and nuance.
               </p>
             )}
             {activeTab === 'curiosity' && (
               <p>
-                I'm constantly curious about how visual choices influence the way we interact with the world...
+                I'm constantly curious about how visual choices influence the way we interact with the world. Whether through structure, contrast, or subtle detail, I see design as a tool for shaping not just what we see, but how we understand. It’s this curiosity that drives me to explore different methods, styles, and concepts — always searching for new ways to communicate an idea effectively.
               </p>
             )}
             {activeTab === 'approach' && (
               <p>
-                I approach design as a way of thinking — observing the world, finding patterns, and responding with thoughtful solutions...
+                I approach design as a way of thinking — observing the world, finding patterns, and responding with thoughtful solutions. I'm drawn to both the expressive and functional sides of the process, and I’m always looking for new ways to push an idea further through design.
               </p>
             )}
           </motion.div>

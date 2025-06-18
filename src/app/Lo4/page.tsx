@@ -10,6 +10,62 @@ const Page: NextPage = ({}) => {
     <h1 className='text-6xl text-[#fdfac2] font-semibold ml-110 mt-8'>4: Professional standard</h1>
     <p className="text-xl text-[#fdfac2] font-normal ml-85 mt-2 mb-10 w-220">You apply professional practice, both individually and in teams, in the areas of project organisation, communication with stakeholders, exploratory research, and reporting.</p>
 
+    <LoCards 
+      title="User Interview – UX Research for Belco"
+      introduction="This entry reflects a single user interview I conducted to inform the UX strategy for the Belco Alliance project. The session was live-transcribed by me and divided into two parts: general background questions and a focused discussion on educational website preferences. At the participant's request, their identity was anonymized, and any visuals provided were AI-generated to respect privacy. All responses are authentic and transcribed directly during the interview."
+      process="The interview began with simple demographic and educational questions to build rapport and understand the participant’s academic background. The second section shifted to their behaviors and expectations when navigating study-related websites. This included discussion on layout preferences, trust indicators, language accessibility, and content hierarchy. The participant had attempted an Erasmus application and had prior experience browsing official educational platforms like Erasmus+."
+      approach="I used a semi-structured interview method, allowing the participant space to answer freely while ensuring all core topics were covered. No recording tools were used—this decision helped create a comfortable environment and allowed me to practice real-time transcription. The goal was to gather honest feedback about what features matter most to students when using digital platforms to explore academic opportunities abroad."
+      takeaways="The participant emphasized a need for clarity and structure, saying they often lose interest if program information isn’t accessible immediately. Clean, minimalistic layouts with soft use of color were preferred, while videos were seen as unnecessary. Real student stories—not curated testimonials—were cited as key trust signals. They preferred filtering by topic rather than country or university, and valued tools like maps for spatial context. Overall, the feedback strongly validated the design direction we were taking with the Belco site: clean, clear, and student-focused."
+      improvements="In future interviews, I’d consider recording audio (with consent) for richer transcript accuracy and add a follow-up questionnaire to capture additional insights. I’d also like to run follow-up usability tests on the actual Belco prototype to see how well it aligns with the expectations expressed here. Expanding the interview pool to students in other domains or institutions could help uncover broader needs and refine the site’s navigation and filtering tools."
+      images={["/images/studentinterview1.png", "/images/studentinterview2.png"]}
+      hrefs={[
+        {
+          href: "images/Transcribed-Interview.pdf",
+          label: "Read full Transcript",
+        }
+      ]}
+    />
+
+
+
+<ProfStandardCards
+  title='Coda Environment'
+  introduction="This is a curated overview of how I structured and organized all project documentation and collaborative workspaces using Coda throughout Semester 2. Each Coda document reflects a distinct course project—UX, Development, Branding, and Research—allowing me to centralize project planning, research, interviews, and progress tracking in a professional, accessible way."
+  method="Each project workspace in Coda was custom-built with collapsible sections, visual links, and smart navigation panels. I created templates for team charters, project plans, interview logs, user research, and deliverable tracking. Pages were labeled according to deliverables, and documents were sorted by semester phase (e.g. Sprint 1, User Testing, Research, Development) to maintain consistency and clarity for both myself and my team."
+  photo1="Photo #1 shows the Branding Project workspace, with documents including the team charter, client research, Dana’s notes, and presentations. Visual assets like the Morphienn logo and deliverables were embedded to support cross-functional design tracking."
+  photo2="Photo #2 shows the Development Project workspace, which includes heuristic evaluations, checkpoint reviews, decision reports, and GitHub-related planning. This was used to track the BelCo platform’s backend development and research implementation."
+  photo3="Photo #3 gives an overview of my full Coda dashboard, where each project is organized and starred for quick access. This helped keep my academic and collaborative projects centralized in one space."
+  photo4="Photo #4 is from Project X, a concept project where I compiled competitor research and visual documentation of exploratory brand studies. The project page was themed visually to match the aesthetic direction we were exploring."
+  photo5="Photo #5 shows the 'Create That UX Project' workspace, where I stored UX-specific research including interview transcripts, personas, MoSCoW priority lists, and survey results—all used to develop the Belco UX case study. The file includes detailed notes and user-driven validation."
+  approach="Using Coda allowed me to bring structure and traceability to multi-stakeholder projects. Each file acted as a living knowledge base, with clear ownership, deadlines, and visual embedding. This made it easy to collaborate, share progress, and stay aligned with academic requirements like professional standards and learning outcomes."
+  takeaways="Coda became a critical tool in my workflow for real-time documentation, UX research planning, and agile development coordination. It supported not just task tracking but also deeper research collection, interview archiving, and reflection writing in a visually organized way."
+  improvements="Next semester, I want to make better use of Coda automation (like reminders or linked checklists) to improve task delegation. I’d also like to connect my GitHub commits directly into dev-related pages and explore exporting entire project docs as structured PDFs to simplify portfolio packaging."
+  images={[
+    "/images/brandingprojectcoda.png",
+    "/images/devprojectcoda.png",
+    "/images/codafiles.png",
+    "/images/projectXcoda.png",
+    "/images/uxprojectcoda.png"
+  ]}
+  hrefs={[
+    {
+      href: "images/Create that UX Project.pdf1",
+      label: "UX Project Full PDF"
+    },
+    {
+      href: "images/DevelopmentProject .pdf",
+      label: "Development Project Full PDF"
+    },
+    {
+      href: "images/Branding Project Media Girls.pdf",
+      label: "Branding Project Full PDF"
+    },
+    {
+      href: "images/Project X.pdf",
+      label: "Project X Full PDF"
+    }
+  ]}
+/>
 
     <ProfStandardCards
         title='Evidence Organization in Figma'
@@ -30,6 +86,22 @@ const Page: NextPage = ({}) => {
               label: "View my Methododlogy on Figma "
             }
     
+        ]}
+    />
+
+    <LoCards 
+        title="User Testing"
+        introduction="This is a summary of a user testing session conducted to evaluate the usability and clarity of my portfolio website. The test helped identify how users interact with different sections, what information they focus on, and where improvements can be made for better navigation and engagement."
+        process="I decided to do more of a 'Freedom' based test meaning I gave full control to the user and observed their reactions. User asked only 'Which Learning Outcome should I see next?' which I consider a normal reaction due to the overactivity of the navigationbar. I cannot do much about it because of the Fontys requirements. During the session, I observed a user exploring my live portfolio, with attention to how intuitively they accessed learning outcomes and read through project documentation. I recorded the session to capture both on-screen behavior and user reactions. This helped validate content structure, layout clarity, and accessibility across devices."
+        approach="The setup was natural — I asked the user to browse my portfolio without instruction while I observed silently. The goal was to see whether they could locate key sections independently, how long they engaged with each part, and how they reacted to the visual language and interactivity. I took notes and later reviewed the screen recording for interaction details."
+        takeaways="This test confirmed which parts of the site were intuitive. Users responded positively to the clean layout. I learned that early-stage testing like this is crucial for catching usability issues before broader feedback cycles. It also showed the importance of readable text, visual hierarchy, and consistent navigation cues."
+        improvements="In future iterations, I’d conduct multiple rounds of testing with users from varied backgrounds and devices. I'd also include a short feedback form post-test to gather direct comments. Additionally, I’d test dynamic interactions like hover animations and navigation transitions to ensure they enhance rather than distract."
+        images={["/images/usertest2.png", "/images/usertest1.png"]}
+        hrefs={[
+          {
+            href: "images/UserTest-Portfolio.mp4",
+            label: "Watch User Test Recording",
+          }
         ]}
     />
 

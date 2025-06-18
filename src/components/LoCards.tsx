@@ -80,13 +80,15 @@ export default function LoCards({
         </div>
         <button
           onClick={scrollPrev}
-          className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+          className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full" // Increased padding
         >
+          &lt; {/* Left arrow */}
         </button>
         <button
           onClick={scrollNext}
-          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full" // Increased padding
         >
+          &gt; {/* Right arrow */}
         </button>
       </div>
       <div className="flex justify-center gap-2 mt-2">

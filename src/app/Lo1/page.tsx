@@ -13,6 +13,38 @@ const Page: NextPage = ({}) => {
     <p className="text-xl text-[#fdfac2] font-normal ml-85 mt-2 mb-10 w-220">You orient in the relevant tech, media and design landscape and create interactive media products that you have tested with users and stakeholders</p>
 
     <LoCards 
+      title="Project X – Suzanne Collins Website Redesign"
+      introduction="This project involved a complete redesign concept for the official website of Suzanne Collins, author of *The Hunger Games*. The goal was to modernize her outdated web presence into a sleek, user-centered platform that better reflects her storytelling legacy. The redesign was conducted as an individual UX project, where I took full responsibility for research, design, structure, and presentation of the new vision."
+      process="The first phase involved a deep evaluation of the current suzannecollinsbooks.com website. I analyzed its layout flaws, design inconsistencies, and usability gaps. I then conducted competitor research and compiled insights into what modern author platforms do better. Based on this, I created wireframes and high-fidelity prototypes in Figma. The redesign included a fully restructured sitemap, revised navigation, and mockups for pages such as Home, Books, About, Resources, and Audio Editions."
+      approach="While the original plan included frontend development with Next.js and Tailwind CSS, I ultimately chose to focus solely on the UX and design due to time constraints. This allowed me to perfect the visual and structural direction of the site without compromising quality. The mockup follows responsive design principles, prioritizes mobile access, and highlights key content like book series, educational materials, and Suzanne Collins’s biography. The design aims to elevate the user experience and capture the personality of her work."
+      takeaways="This project helped me develop a complete end-to-end UX design workflow—from research and analysis, through wireframing and prototyping. I also learned to adapt when timelines or scope shift, choosing to deliver a polished and thoughtful redesign over an unfinished codebase. It improved my skills in Figma, strengthened my layout planning, and helped me define a stronger UX rationale for a real-world author use case."
+      improvements="In the future, I would continue with the coding phase using the planned tech stack. I’d also conduct usability testing with real users (educators, fans, librarians) to validate the redesign decisions. Finally, I’d like to explore interactive storytelling elements on the site that echo Suzanne Collins’s narrative tone, helping fans engage even deeper."
+      images={["/images/projectX2.png", "/images/projectX1.png"]}
+      hrefs={[
+        {
+          href: "https://www.figma.com/proto/e9QsUnSqL2OjYFCZ1T38O6/Project-X-S2?page-id=0%3A1&node-id=19-2&p=f&viewport=-2364%2C385%2C0.56&t=2O14iQt7RNXzH4Ae-1&scaling=min-zoom&content-scaling=fixed",
+          label: "View Project X Prototype"
+        }
+      ]}
+  />
+
+    <LoCards 
+    title="User Testing"
+    introduction="This is a summary of a user testing session conducted to evaluate the usability and clarity of my portfolio website. The test helped identify how users interact with different sections, what information they focus on, and where improvements can be made for better navigation and engagement."
+    process="I decided to do more of a 'Freedom' based test meaning I gave full control to the user and observed their reactions. User asked only 'Which Learning Outcome should I see next?' which I consider a normal reaction due to the overactivity of the navigationbar. I cannot do much about it because of the Fontys requirements. During the session, I observed a user exploring my live portfolio, with attention to how intuitively they accessed learning outcomes and read through project documentation. I recorded the session to capture both on-screen behavior and user reactions. This helped validate content structure, layout clarity, and accessibility across devices."
+    approach="The setup was natural — I asked the user to browse my portfolio without instruction while I observed silently. The goal was to see whether they could locate key sections independently, how long they engaged with each part, and how they reacted to the visual language and interactivity. I took notes and later reviewed the screen recording for interaction details."
+    takeaways="This test confirmed which parts of the site were intuitive. Users responded positively to the clean layout. I learned that early-stage testing like this is crucial for catching usability issues before broader feedback cycles. It also showed the importance of readable text, visual hierarchy, and consistent navigation cues."
+    improvements="In future iterations, I’d conduct multiple rounds of testing with users from varied backgrounds and devices. I'd also include a short feedback form post-test to gather direct comments. Additionally, I’d test dynamic interactions like hover animations and navigation transitions to ensure they enhance rather than distract."
+    images={["/images/usertest2.png", "/images/usertest1.png"]}
+    hrefs={[
+      {
+        href: "images/UserTest-Portfolio.mp4",
+        label: "Watch User Test Recording",
+      }
+    ]}
+/>
+
+    <LoCards 
     title='Booklet'
     introduction="This is an overview of the foldable booklet I helped create for the BELCO development project. Alongside my teammate, we extended our website presentation by designing a cohesive physical asset to enhance engagement and communicate our work professionally." 
     process="My main contributions were the design of several key booklet sections: the “Programs” page, the “How it works?” explanation, the student testimonials, and the back cover featuring the QR codes. I used Figma to prototype the layout and color structure, ensuring the visual identity aligned with the project’s branding. The foldable booklet was carefully structured to guide users through BELCO’s offerings in a compact, interactive format, with clearly divided sections and scannable links."

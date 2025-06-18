@@ -82,6 +82,42 @@ const Page: NextPage = ({}) => {
         takeaways="Watching these videos helped me make smarter decisions about where to spend my focus. For example, I realized I had been overlooking accessibility in design, so I’ve started including alt text and color contrast checks more deliberately. I also internalized that backend doesn’t mean harder—it just means different. Seeing the full-stack structure helped me appreciate how important frontend usability is in bridging the logic and the experience."
         improvements="In the future, I’ll take more notes and organize them into Notion with timestamps and summaries. I also want to try building projects alongside video walkthroughs instead of just absorbing the theory. Lastly, I’d like to add a reflection box after each video to summarize what I applied and how it impacted my project decisions that week."
         images={["/images/youtube1.png", "/images/youtube2.png", "/images/youtube3.png"]}
+        hrefs={[
+            {
+              href: "https://youtu.be/L22lDu3QX2c?si=rS7HH892fACutq_k",
+              label: "The CORRECT (and lazy) way to prototype | Figma Tutorial"
+            },
+            {
+              href: "https://youtu.be/1ucLq6JTxac?si=7qw5eNhKC1fQdvvS",
+              label: "Figma Prototype Tutorial for Beginners (2025)"
+            },
+            {
+              href: "https://youtu.be/XBu54nfzxAQ?si=zgPxN9H_1eS3Cg5k",
+              label: "Backend web development - a complete overview"
+            },
+            {
+              href: "https://youtu.be/Tn6-PIqc4UM?si=LoDtheFxNVId_BEP",
+              label: "React in 100 Seconds"
+            },
+            {
+              href: "https://youtu.be/vTuL2_4VOBA?si=mi3I3hqzSC-A8b1b",
+              label: "Learning Frontend Development in 2025 lol"
+            },
+            {
+              href: "https://youtu.be/WG5ikvJ2TKA?si=_g0g1BAahEU1WFfA",
+              label: "Frontend web development - a complete overview"
+            },
+            {
+              href: "https://youtu.be/Tef1e9FiSR0?si=YpjMDndfMkpYFOxZ",
+              label: "The Complete Frontend Developer Roadmap"
+            },
+            {
+              href: "https://youtu.be/shN0HNnvaoM?si=1M50m8N7AtPWiK1r",
+              label: "How I'd Learn Front End Web Development (If I Could Start Over)"
+            },
+      
+          ]}
+
     />
 
     <div className="rounded-[1.25rem] bg-[#adadad] my-[3rem]  w-full sm:max-w-sm md:max-w-md lg:ml-80 lg:max-w-4xl h-auto flex flex-col overflow-hidden text-purple px-4 sm:px-6 lg:px-9 pb-2 mt-2 mb-6">
@@ -148,17 +184,35 @@ const Page: NextPage = ({}) => {
     <LoCards
         title="Taking Feedback Seriously – My FeedPulse Checkpoints"
         introduction="These screenshots highlight the checkpoints I personally authored and managed within FeedPulse across both group projects. Unlike last semester, where we barely documented three moments, this time I made it a habit to capture feedback after every major milestone. I took ownership of writing the entries, ensuring our progress and teacher advice were clearly reflected, contextualized, and trackable."
-        process="Throughout the semester, I scheduled feedback sessions proactively—after prototype testing, visual decisions, deployment discussions, and final presentations. Each checkpoint was carefully written with summaries of what we showed and what advice we received. This includes moments with Paul on our Vercel deployment and Git collaboration, with Jan for iterative design validation, and Dirk for user testing feedback. I treated FeedPulse not just as a formal requirement, but as a tool to map our reflection cycle in real time."
+        process="As you can see through the PDFs I provided (see below) I have submitted all chackpoints for both my individual AND GROUP projects.Throughout the semester, I scheduled feedback sessions proactively—after prototype testing, visual decisions, deployment discussions, and final presentations. Each checkpoint was carefully written with summaries of what we showed and what advice we received. This includes moments with Paul on our Vercel deployment and Git collaboration, with Jan for iterative design validation, and Dirk for user testing feedback. I treated FeedPulse not just as a formal requirement, but as a tool to map our reflection cycle in real time."
         approach="Having full control over the checkpoint documentation helped me streamline communication in our team. My summaries made it easier to recall teacher suggestions when updating the design or preparing for assessments. By treating every checkpoint as a feedback sprint, I enabled my team to iterate faster and more confidently. It also allowed teachers to give us more tailored guidance since they saw consistent updates from us."
         takeaways="I learned that consistency with feedback logs leads to more reliable and richer advice. Instead of vague pointers, we started receiving detailed suggestions on how to improve typography, navigation, or audience targeting. Teachers like Paul, Jan, and Chris could follow our progress over time, and this continuity really strengthened our outcomes. It also validated our process—it showed we weren't improvising but steadily building toward goals."
-        improvements="In the future, I want to add screenshots to each FeedPulse entry for even clearer context. I’ll also encourage all group members to take turns contributing reflections, so it becomes a shared habit and not a single-person responsibility. Lastly, I plan to better categorize the checkpoints (e.g., Design, Development, Testing) to track growth in specific areas across the semester."
+        improvements="In the future, I want to  also encourage all group members to take turns contributing reflections, so it becomes a shared habit and not a single-person responsibility. Lastly, I plan to better categorize the checkpoints (e.g., Design, Development, Testing) to track growth in specific areas across the semester. I also am not pleased with my checkpoints from the UX project because the consistency was lacking there. I contribute that to being in a bigger group (6 people) but I would like to find a way to keep up the work up to my standard in a bigger team."
         images={[
             "/images/Checkpoint1.png",
             "/images/Checkpoint2.png",
             "/images/Checkpoint3.png",
             "/images/Checkpoint4.png",
             "/images/chechkpoints.png"
-        ]}
+        ]}       
+         hrefs={[
+            {
+              href: "images/Checkpointa1.pdf",
+              label: "Individual Checkpoints PDF"
+            },
+            {
+              href: "images/Checkpoints2.pdf",
+              label: "Branding Project Checkpoints PDF"
+            },
+            {
+              href: "images/Checkpoints3.pdf",
+              label: "Development Project Checkpoints PDF"
+            },
+            {
+              href: "images/Checkpoints4.pdf",
+              label: "UX Project Checkpoints PDF"
+            }
+          ]}
     />
 
 

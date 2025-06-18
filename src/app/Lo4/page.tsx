@@ -24,6 +24,13 @@ const Page: NextPage = ({}) => {
         takeaways="Figma can be more than a design tool—it works as a structured container for collecting and presenting academic and technical evidence. I became more detail-oriented and consistent with my naming and layout style, which helped build a cleaner final portfolio."
         improvements="Next semester, I plan to build a reusable template in Figma for faster population. I also want to test linking external files directly via live embeds to reduce clutter and allow live access to Git commits or documents."
         images={["/images/proflo1.png", "/images/proflo2.png", "/images/proflo3.png", "/images/proflo4.png", "/images/proflo5.png"]}
+        hrefs={[
+            {
+              href: "https://www.figma.com/design/PYbOzZxlZQEWb4hlEXpNFH/Portfolio-S2?node-id=0-1&t=vslHOUsi9btV6gxn-1",
+              label: "View my Methododlogy on Figma "
+            }
+    
+        ]}
     />
 
     <LoCards
@@ -34,6 +41,7 @@ const Page: NextPage = ({}) => {
         takeaways="I learned that leadership isn’t just about giving instructions—it’s also about maintaining emotional awareness, managing stress in others, and keeping communication honest and clear. I developed a better sense of when to push and when to support. I also found that clear, timely group communication can completely change the outcome of high-pressure projects."
         improvements="In future projects, I would try to delegate more responsibilities instead of micromanaging everything. I’d also like to create a shared central overview (e.g. Trello or Notion) early on to reduce reliance on chat messages and improve clarity on who is doing what."
         images={["/images/leadercommunication1.png", "/images/leadercommunication2.png", "/images/leadercommunication3.png", "/images/leadercommunication4.png"]}
+
     />
 
     <LoCards
@@ -44,7 +52,22 @@ const Page: NextPage = ({}) => {
         takeaways="I learned that solid project management doesn’t require complex tools—it just needs to be structured around clear expectations and visual organization. The Trello board helped the team prioritize better, reduce confusion, and keep track of deliverables in sync with our development phasing plan. It became a reference point we returned to daily."
         improvements="In the future, I want to add more automation features like card reminders and status triggers. I’d also introduce a 'Feedback & Reflections' column for each sprint to document insights. Lastly, I’d encourage the entire team to take more initiative in updating their own tasks and contributing to board upkeep."
         images={["/images/proftrelloguide.png", "/images/profscheduling.png", "/images/trelloprof.png"]}
-    />
+        hrefs={[
+            {
+              href: "images/How_to_Use_Trello_Board.pdf",
+              label: "Trello Guide PDF "
+            },
+            {
+              href: "images/Project_Plan.pdf",
+              label: "Project Plan PDF (Phasing)"
+            },
+            {
+              href: "https://trello.com/invite/b/681b16c0e46a6e98d72b24e2/ATTI7bf33fab25ecf8e08f85384f2d1d74f6FADEDFE8/development-workspace",
+              label: "Trello Board"
+            }
+    
+            ]}   
+        />
 
     <LoCards
         title="Communication with Stakeholders"
@@ -64,6 +87,25 @@ const Page: NextPage = ({}) => {
         takeaways="I've learned that I have a real strength—and passion—for visual storytelling through presentations. I also realized how important it is to adapt to different tools, and how trying something new (like Canva) can unlock unexpected creativity. This semester also reinforced how much I enjoy presenting and owning the structure of a group's delivery."
         improvements="Next time, I'd like to experiment more deeply with Canva and explore features I didn't use yet. I'd also aim to collaborate more during the early stages of presentation design—perhaps involving groupmates in the visual decisions, not just assigning content. Lastly, I'd look for ways to encourage more interaction during and after presentations, especially when presenting to peers who may be hesitant to give feedback."
         images={["/images/presentation1.png", "/images/presentation2.png", "/images/presentation3.png", "/images/presentaitioncheckpoint.png"]}
+        hrefs={[
+            {
+              href: "https://www.canva.com/design/DAGlXL2pCu4/Pd3ajgb17l0xAGNNuIcA_A/edit?utm_content=DAGlXL2pCu4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+              label: "View Presentation 1"
+            },
+            {
+              href: "https://www.canva.com/design/DAGj3DZceAg/Q1QMaFGHqie7Yap3era9aA/edit?utm_content=DAGj3DZceAg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+              label: "View Presentation 2"
+            },
+            {
+              href: "https://docs.google.com/presentation/d/1ZkqH3myk2CbliYp5ABke_E8ZiXFFIZycSP_wR5SQQ8k/edit?usp=sharing",
+              label: "View Presentation 3"
+            },
+            {
+              href: "https://docs.google.com/presentation/d/1nGTcF8KT2d3mo3q3mOGpGOBsQGjmtjkTqWiHWqsiUdA/edit?usp=sharing",
+              label: "View Presentation 4"
+            },
+      
+          ]}
     />
 
 

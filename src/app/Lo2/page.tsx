@@ -1,6 +1,7 @@
 import { NextPage } from 'next';
 import NavBar from "@/components/NavBar";
 import LoCards from "@/components/LoCards"
+import { NONAME } from 'dns';
 
 
 const Page: NextPage = ({}) => {
@@ -17,6 +18,25 @@ const Page: NextPage = ({}) => {
         takeaways="I learned how to structure projects using Next.js, implement features like routing and server-side rendering, and deploy live applications with ease. I also strengthened my ability to learn independently through documentation and online communities while improving my collaborative workflow."
         improvements="In future iterations, I would incorporate TypeScript earlier to improve code safety and scalability. I do not want to write in simple HTML/CSS anymore. I’d also take time to experiment with more advanced Next.js capabilities like middleware, API routes, and incremental static regeneration. Finally, I’d document my learning more consistently to better showcase growth over time."
         images={["/images/Nextjssite0.png", "/images/Nextjssite1.png", "/images/Nextjssite2.png", "/images/NextjsReddit.png"]}
+        hrefs={[
+            {
+              href: "https://nextjs.org/",
+              label: "Open NextJS Website"
+            },
+            {
+              href: "https://www.heroui.com/docs/frameworks/nextjs",
+              label: "Open HeroUI Website"
+            },
+            {
+              href: "https://www.sanity.io/exchange/framework=nextjs",
+              label: "Open Sanity NextJS Website"
+            },
+            {
+              href: "https://www.reddit.com/r/react/comments/1cxybcx/do_people_still_build_with_react_js_or_is_next_js/",
+              label: "Open Reddit Thread"
+            }
+      
+          ]}
     />
 
     <LoCards 
@@ -27,6 +47,16 @@ const Page: NextPage = ({}) => {
         takeaways="I learned how to create responsive layouts using breakpoint prefixes, apply consistent typography using utility classes, and structure clean, scalable styles without writing traditional CSS. I also became more comfortable forming my own stance on using utility frameworks in frontend development."
         improvements="In future work, I would spend more time customizing my Tailwind configuration to match project branding needs. I’d also like to explore features like dark mode support and container queries more deeply. Lastly, I plan to create a few personal UI kits using Tailwind to improve reuse and speed up future projects."
         images={["/images/Tailwindcss1.png", "/images/Tailwindcss2.png", "/images/TailwindcssReddit.png"]}
+        hrefs={[
+            {
+              href: "https://tailwindcss.com/docs/installation/using-vite",
+              label: "Open TailwindCSS Website"
+            },
+            {
+              href: "https://www.reddit.com/r/webdev/comments/15chth7/is_css_frameworks_like_tailwind_is_really_better/",
+              label: "Open Reddit Thread"
+            }
+          ]}
     />
 
     <LoCards 
@@ -37,6 +67,7 @@ const Page: NextPage = ({}) => {
         takeaways="I gained practical skills in JavaScript fundamentals, DOM manipulation, JSX syntax, and basic interactivity using event listeners. I also improved my self-discipline by following course structures and dedicating regular time to coding challenges."
         improvements="Next time, I’d create more personal mini-projects alongside courses to apply what I’m learning in real time. I’d also explore learning with TypeScript early on to build a stronger foundation for scalable frontend work and consider pairing courses with documentation reading for deeper context."
         images={["/images/Udemycourses.png", "/images/Codecademycourse.png"]}
+    
     />
    
     <LoCards 
@@ -47,6 +78,13 @@ const Page: NextPage = ({}) => {
         takeaways="I learned how to manage dynamic data using 'useState' and props, how to structure large-scale Next.js apps, and how to apply responsive styles effectively. This experience also taught me the importance of reusable components and clearly defined project architecture for maintainability and scalability."
         improvements="Next time, I would like to connect the filtering system to a real database instead of static data, and I’d explore using a CMS like Sanity or Contentful. I’d also implement unit tests to catch UI and data issues early, and possibly use context to simplify state management across multiple components."
         images={["/images/nextjsfolderstructure.png", "/images/nextjslayoutpage.png", "/images/nextjsjavascript.png", "/images/nextjsprops.png"]}
+        hrefs={[
+            {
+              href: "https://github.com/yanadoesntcode/portfolio-s2.git",
+              label: "Open My GitHub Repo (its public)"
+            }
+          ]}
+    
     />
 
     <LoCards 
@@ -57,6 +95,16 @@ const Page: NextPage = ({}) => {
         takeaways="I learned how automated deployments work and how closely tied they are to clean Git practices. I also gained experience troubleshooting real deployment issues like runtime errors and version mismatches. Vercel’s Git integration and UI made this process easier to manage, even if it wasn't always smooth."
         improvements="Next time, I’ll test builds locally more thoroughly before pushing to main to avoid unnecessary failed deployments. I’ll also maintain a stable production branch and only merge after confirming all features work. Lastly, I want to explore Vercel’s advanced features like analytics, custom domains, and edge functions to make better use of the platform."
         images={["/images/VercelHome.png", "/images/VercelOverview.png", "/images/Vercel Deployment.png", "/images/VercelCommits.png"]}
+        hrefs={[
+            {
+              href: "https://vercel.com/home",
+              label: "OpenVercel Home Page"
+            },
+            {
+                href: "https://final-belco-alliance.vercel.app/",
+                label: "Visit the Belco Alliance Website hosted on Vercel"
+              }
+          ]}
     />
 
     <LoCards 
@@ -67,6 +115,13 @@ const Page: NextPage = ({}) => {
         takeaways="I learned that Git isn't something you learn once and then remember forever—it takes regular use and repetition to feel comfortable with it. I also realized the importance of consistent version control from the start of a project, not just at the end. Writing a clear README and organizing access properly through GitLab settings helped me make my repository more professional and useful for both myself and others."
         improvements="Next time, I'll commit and push changes more regularly instead of waiting until the last minute. I'll also make sure to check on my repositories throughout the project to ensure everything is up to date. Finally, I want to continue practicing Git even outside of deadlines so that I can keep my skills fresh and avoid falling into the same confusion again."
         images={["/images/gitreadme.png", "/images/gitactivity.png", "/images/gitmembers.png"]}
+        hrefs={[
+            {
+                href: "https://git.fhict.nl/I546322/s2-03-development-for-belco.git",
+                label: "GitLab Repo for HTML Belco"
+            }
+
+        ]}
     />
     <LoCards 
         title='Version Control w/ GitHub'
@@ -76,6 +131,17 @@ const Page: NextPage = ({}) => {
         takeaways="I learned how to structure GitHub repositories professionally, write clear README documentation, and manage commits with intention. I also understood the importance of syncing my local changes regularly to maintain a clean development history. Keeping my work private gave me control while still using GitHub as a professional tool."
         improvements="Next time, I want to commit changes more frequently and with more descriptive messages. I’ll also explore branching and pull request workflows to simulate real-world collaboration. Lastly, I aim to open-source parts of my work or prepare them for public sharing by improving structure and removing sensitive information."
         images={["/images/GitHub1.png", "/images/GitHub2.png", "/images/GitHub3.png", "/images/GitHub3-1.png"]}
+
+        hrefs={[
+            {
+              href: "https://github.com/yanadoesntcode/portfolio-s2.git",
+              label: "Open My GitHub Portfolio Repo (its public)"
+            },
+            {
+              href: "https://github.com/yanadoesntcode/final-belco-alliance.git",
+              label: "Open My GitHub Belco Repo (its public)"
+            }
+          ]}
     />
 
     

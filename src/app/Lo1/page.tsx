@@ -3,7 +3,10 @@ import NavBar from "@/components/NavBar";
 import LoCards from "@/components/LoCards"
 
 
+
 const Page: NextPage = ({}) => {
+
+
   return <main className='bg-[#3f3f3f]'>
     <NavBar></NavBar>
     <h1 className='text-6xl text-[#fdfac2] font-semibold ml-95 mt-8'>1: Interactive Media products</h1>
@@ -16,7 +19,15 @@ const Page: NextPage = ({}) => {
     approach='The process was rewarding and pushed me to think beyond screen-based design. Designing the booklet taught me to consider texture, fold lines, and physical readability for print materials. Collaboration with my teammate helped us distribute the design tasks based on individual strengths, which improved both workflow and the final quality of the booklet.'
     takeaways='I learned how to design for print and how to integrate scannable QR links for added interactivity in the booklet. I also gained experience in visual storytelling through sequential booklet panels and discovered the importance of creating a strong, unified visual identity for the project’s physical assets.'
     improvements='Next time, I’d test printed mockups of the booklet earlier in the design phase to catch any issues with layout scaling or paper folds. I’d also experiment more with layout variations for the booklet before finalizing and gather more user feedback to refine how the information flows across its pages.'
-    images={["/images/interactivebelco2.png", "/images/interactivebelco3.png", "/images/interactivebelco4.png",  "/images/interactivebelco6.png"]}/>
+    images={["/images/interactivebelco2.png", "/images/interactivebelco3.png", "/images/interactivebelco4.png",  "/images/interactivebelco6.png"]}
+    hrefs={[
+      {
+        href: "https://www.figma.com/proto/snQ3qBvT3ogh00Jf0Abczc/Fontys?page-id=278%3A2702&node-id=1802-128&p=f&viewport=-4525%2C618%2C0.16&t=6kuLUfLDnkXslhlW-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1323%3A12",
+        label: "View Booklet Prototype",
+      }
+    ]}
+
+/>
     
     <LoCards 
     title='Business Cards'
@@ -25,7 +36,14 @@ const Page: NextPage = ({}) => {
     approach='The process was rewarding and pushed me to think beyond screen-based design. Designing the business cards taught me to consider texture and physical readability for print materials. Collaboration with my teammate helped us distribute the design tasks based on individual strengths, which improved both workflow and the final quality of the business cards.'
     takeaways='I learned how to design for print and how to balance creative design with practical communication in the context of business cards. I also discovered the importance of creating a strong, unified visual identity for the project’s physical assets.'
     improvements='Next time, I’d test printed mockups of the business cards earlier in the design phase to catch any issues with layout scaling or print quality. I’d also experiment more with layout variations for the business cards before finalizing and gather more user feedback to refine the design and information presentation.'
-    images={["/images/interactivebelco1.png", "/images/interactivebelco5.png"]}/>
+    images={["/images/interactivebelco1.png", "/images/interactivebelco5.png"]}
+    hrefs={[
+      {
+        href: "https://www.figma.com/proto/snQ3qBvT3ogh00Jf0Abczc/Fontys?page-id=278%3A2702&node-id=1800-155&p=f&viewport=-4525%2C618%2C0.16&t=6kuLUfLDnkXslhlW-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1323%3A12",
+        label: "View Business Cards Prototype",
+      }
+    ]}
+    />
     
     
     <LoCards 
@@ -35,7 +53,14 @@ const Page: NextPage = ({}) => {
     approach='The process was rewarding and pushed me to think beyond screen-based design. Translating a digital concept into tactile materials taught me to consider texture, fold lines, and physical readability. Collaboration with my teammate also helped us distribute the design tasks based on individual strengths, which improved both workflow and final quality.'
     takeaways='I learned how to adapt existing design systems while giving them a new purpose. I also deepened my understanding of Figma’s prototyping tools and how to apply user research to redesign visual and structural elements effectively. The project emphasized the value of tailoring content to specific user needs—in this case, international students exploring exchange opportunities.'
     improvements='Next time, I’d make sure to include usability testing before finalizing the prototype. I’d also consider setting clearer goals for each user interaction and possibly expanding on filtering or sorting options to help users navigate universities or countries more intuitively.'
-    images={[ "/images/interactiveprototype6.png", "/images/interactiveprototype7.png"]}/>
+    images={[ "/images/interactiveprototype6.png", "/images/interactiveprototype7.png"]}
+    hrefs={[
+      {
+        href: "https://www.figma.com/proto/snQ3qBvT3ogh00Jf0Abczc/Fontys?page-id=278%3A2702&node-id=1323-12&p=f&viewport=-4525%2C618%2C0.16&t=6kuLUfLDnkXslhlW-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1323%3A12",
+        label: "View Belco Alliance Prototype",
+      }
+    ]}
+    />
 
     <LoCards 
     title='Branding Oscar'
@@ -44,7 +69,15 @@ const Page: NextPage = ({}) => {
     approach='The process was smooth and insightful. Creating an interactive prototype allowed for more engaging storytelling, and tailoring each guide to the individual client helped me connect design decisions to their personal style.'
     takeaways='I learned how to present branding iterations professionally, justify design choices with research and feedback, and frame my outcomes in terms of their impact rather than just their features.'
     improvements="Next time, I'd explore client collaboration earlier in the process to gather feedback sooner. I'd also try experimenting with more interactive design elements and push the creative direction further based on each client's brand personality."
-    images={[ "/images/interactiveprototype1.png", "/images/interactiveprototype2.png"]}/>
+    images={[ "/images/interactiveprototype1.png", "/images/interactiveprototype2.png"]}
+    hrefs={[
+      {
+        href: "https://www.figma.com/proto/VE3Drcy2tCi6SayidNhQ6m/Oscar-Wouterse?page-id=0%3A1&node-id=19-53&viewport=662%2C480%2C0.08&t=MthJwujP0DeV5Pod-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=19%3A53",
+        label: "View Oscar Wouterse Branding Protoype"
+      }
+
+    ]}
+    />
 
     <LoCards 
     title='My Portfolio'
@@ -53,7 +86,16 @@ const Page: NextPage = ({}) => {
     approach="While the beginning of the process was tough due to burnout and lack of structure, once I found my creative rhythm, the work began to flow. Designing in Figma helped me organize my thoughts and build structure for myself where none was given. The film and media theme gave the project a strong identity, and aligning the visual choices with that concept helped ground all design decisions."
     takeaways="I learned that I need structure in order to thrive, and when it's not provided, I can build it myself through planning and visual mapping. I also discovered the power of thematic storytelling in portfolio design—when a project is rooted in personal identity, it becomes more impactful. Most importantly, I learned how to navigate creative blocks and burnout with patience and self-awareness."
     improvements="Next time, I would try to start earlier and pace the workload better to avoid burnout. I would also reach out for support sooner—whether through peers, mentors, or feedback loops—so I don't stay stuck in a creative block for too long. Additionally, I'd experiment with more advanced interactions and possibly bring the prototype into code for a live version."
-    images={[ "/images/interactiveprototype3.png", "/images/interactiveprototype4.png", "/images/interactiveprototype5.png" ]}/>
+    images={[ "/images/interactiveprototype3.png", "/images/interactiveprototype4.png", "/images/interactiveprototype5.png" ]}
+    hrefs={[
+      {
+        href: "https://www.figma.com/proto/PYbOzZxlZQEWb4hlEXpNFH/Portfolio-S2?page-id=1%3A73&node-id=100-668&viewport=-2551%2C286%2C0.1&t=ExdKMevKn2P3dp8m-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A123",
+        label: "View my Portfolio Prototype"
+      }
+
+    ]}
+    
+    />
 
     <LoCards 
     title='Presentations'
@@ -62,7 +104,28 @@ const Page: NextPage = ({}) => {
     approach="Taking the lead on the visual and structural side of the presentations allowed me to stay in my comfort zone and also enjoy the creative process. I genuinely like making presentations and presenting them—it's a part of group work I look forward to. Canva was a highlight; it helped me push my usual style further, especially when working on more visually layered or bold themes. One challenge, however, was that sometimes presentations didn't get much response from peers—like during our final Branding presentation, where the class didn't ask questions or give feedback beyond “it was good.” Still, our client (Dana) was very happy with what we delivered, which was rewarding."
     takeaways="I've learned that I have a real strength—and passion—for visual storytelling through presentations. I also realized how important it is to adapt to different tools, and how trying something new (like Canva) can unlock unexpected creativity. This semester also reinforced how much I enjoy presenting and owning the structure of a group's delivery."
     improvements="Next time, I'd like to experiment more deeply with Canva and explore features I didn't use yet. I'd also aim to collaborate more during the early stages of presentation design—perhaps involving groupmates in the visual decisions, not just assigning content. Lastly, I'd look for ways to encourage more interaction during and after presentations, especially when presenting to peers who may be hesitant to give feedback."
-    images={[ "/images/presentation1.png", "/images/presentation2.png", "/images/presentation3.png", "/images/presentaitioncheckpoint.png" ]}/>
+    images={[ "/images/presentation4.png", "/images/presentation1.png", "/images/presentation2.png", "/images/presentation3.png", "/images/presentaitioncheckpoint.png" ]}
+    hrefs={[
+      {
+        href: "https://www.canva.com/design/DAGlXL2pCu4/Pd3ajgb17l0xAGNNuIcA_A/edit?utm_content=DAGlXL2pCu4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+        label: "View Presentation 1"
+      },
+      {
+        href: "https://www.canva.com/design/DAGj3DZceAg/Q1QMaFGHqie7Yap3era9aA/edit?utm_content=DAGj3DZceAg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+        label: "View Presentation 2"
+      },
+      {
+        href: "https://docs.google.com/presentation/d/1ZkqH3myk2CbliYp5ABke_E8ZiXFFIZycSP_wR5SQQ8k/edit?usp=sharing",
+        label: "View Presentation 3"
+      },
+      {
+        href: "https://docs.google.com/presentation/d/1nGTcF8KT2d3mo3q3mOGpGOBsQGjmtjkTqWiHWqsiUdA/edit?usp=sharing",
+        label: "View Presentation 4"
+      },
+
+    ]}
+    
+    />
 
 
     <h1>...</h1>

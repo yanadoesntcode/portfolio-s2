@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 
+
 export default function Navbar() {
   const router = useRouter()
 
@@ -43,6 +44,7 @@ export default function Navbar() {
             5: Personal Leadership
           </button>
         </ul>
+        
       </div>
     </nav>
   )

@@ -13,7 +13,7 @@ type BlogCardsProps = {
   takeaways: string;
   improvements: string;
   images: string[];
-  hrefs?: { href: string; label: string;  }[] | undefined; // Added target property
+  hrefs?: { href: string; label: string;  }[] | undefined; 
 };
 
 export default function LoCards({

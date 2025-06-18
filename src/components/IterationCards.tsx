@@ -13,9 +13,10 @@ type BlogCardsProps = {
   takeaways: string;
   improvements: string;
   images: string[]; // Ensure this is always an array
+  hrefs?: { href: string; label: string;  }[] | undefined; 
 };
 
-export default function LoCards({ title, introduction, process, approach, takeaways, improvements, images }: BlogCardsProps) {
+export default function LoCards({ title, introduction, process, approach, takeaways, improvements, images, hrefs }: BlogCardsProps) {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
   const [selectedIndex, setSelectedIndex] = useState(0); // Track active slide
 
@@ -103,6 +104,34 @@ export default function LoCards({ title, introduction, process, approach, takeaw
         <p className="font-normal text-sm sm:text-base">{takeaways}</p>
         <p className="text-purple font-bold text-lg sm:text-xl mb-1">What I Learned – Summary</p>
         <p className="font-normal text-sm sm:text-base">{improvements}</p>
+      </div>
+
+      {/* Links Section */}
+      <div className="px-4 sm:px-6 lg:px-9 pb-4">
+        <h3 className="text-purple font-bold text-lg sm:text-base mb-2">
+          Related Links
+        </h3>
+        {hrefs && hrefs.length > 0 ? (
+          <ul className="flex flex-wrap gap-4">
+            {hrefs.map((link, index) => (
+              <li key={index}>
+                {link.href ? (
+                  <Link
+                    href={link.href}
+                    target={"_blank"}
+                    className="block text-center text-white font-semibold bg-gray-800 rounded-lg px-6 py-3 min-w-[120px] hover:bg-gray-700 transition-colors duration-200"
+                  >
+                    {link.label || "Unnamed Link"}
+                  </Link>
+                ) : (
+                  <p className="text-sm text-red-500">Invalid link at index {index}</p>
+                )}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="text-sm text-gray-600">No links available</p>
+        )}
       </div>
     </div>
   );
